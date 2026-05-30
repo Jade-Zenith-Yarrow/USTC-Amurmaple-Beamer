@@ -5,20 +5,24 @@
 ## 预览
 
 | 封面 | 目录 |
-|------|------|
+|----------|----------|
 | ![](./Figures%20Display/main_页面_01.png) | ![](./Figures%20Display/main_页面_02.png) |
 
-| 基础环境 | 表格 |
-|----------|------|
-| ![](./Figures%20Display/main_页面_08.png) | ![](./Figures%20Display/main_页面_23.png) |
+| 基础环境 | 图片 |
+|----------|----------|
+| ![](./Figures%20Display/main_页面_14.png) | ![](./Figures%20Display/main_页面_18.png) |
 
-| 算法 | 数学样式 |
-|------|----------|
-| ![](./Figures%20Display/main_页面_26.png) | ![](./Figures%20Display/main_页面_27.png) |
+| 表格 | 算法 |
+|----------|----------|
+| ![](./Figures%20Display/main_页面_19.png) | ![](./Figures%20Display/main_页面_21.png) |
 
-| 致谢页 |
-|--------|
-| ![](./Figures%20Display/main_页面_37.png) |
+| 分隔页 | 参考文献 |
+|----------|----------|
+| ![](./Figures%20Display/main_页面_26.png) | ![](./Figures%20Display/main_页面_29.png) |
+
+| 数学样式 | 致谢页 |
+|----------|----------|
+| ![](./Figures%20Display/main_页面_32.png) | ![](./Figures%20Display/main_页面_37.png) |
 
 > [📄 下载完整 PDF 预览](./main.pdf)
 
