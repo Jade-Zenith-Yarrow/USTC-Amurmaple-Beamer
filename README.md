@@ -32,7 +32,8 @@
 - 常用宏包：`ctex`、`luamesh`、`tcolorbox`、`algorithm2e` 等
 
 ## 快速开始
-下载 .zip 解压直接运行 main.tex 即可。
+下载 .zip 解压直接运行 main.tex 即可
+
 ```bash
 # 克隆仓库
 git clone https://github.com/<your-username>/USTC-Amurmaple-Beamer.git
