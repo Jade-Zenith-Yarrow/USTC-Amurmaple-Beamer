@@ -1,0 +1,38 @@
+\section{数学样式}
+%\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+% \sepframe 无插入 logo 的分隔页
+\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+
+\begin{frame}[fragile]{自定义数学命令}
+	\begin{block}{自定义符号}
+	\texttt{Configure/commands.tex} 中定义了常用数学符号，例如
+	\[
+	\xb,\quad \Rb,\quad \zb,\quad \thetab,\quad \N,\quad \E,\quad \KL,\quad \norm{\xb}_2
+	\]
+	\end{block}
+	
+	\begin{block}{示例公式}
+		\begin{equation}
+			\xb_t=\sqrt{\bar{\alpha}_t}\xb_0+(1-\sqrt{\bar{\alpha}_t})\Rb+\sqrt{1-\bar{\alpha}_t}\epsilonb
+			\label{eq_label}
+		\end{equation}
+		公式引用效果：\eqref{eq_label}。
+	\end{block}
+\begin{lstlisting}
+\begin{equation}
+    % 公式内容
+    \label{eq_label}
+\end{equation}
+公式引用效果：\eqref{eq_label}。
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{数学样式测试页说明}
+	\begin{information}[完整展示]
+		\texttt{main.tex} 中的 \texttt{Sections/MathStyleTest.tex} 是自定义数学样式的完整测试页。手册后续会直接导入该文件，因此 \texttt{USTC\_Amurmaple-doc.pdf} 中会完整展示 Definition、Property、Question、Solution、Remark、Example、Theorem、Corollary、Lemma、Proposition 和 Proof 的样式及引用效果。
+	\end{information}
+	
+	\begin{remark}[维护方式]
+		只需要修改 \texttt{Configure/beamerMathStyle.tex} 和 \texttt{Sections/MathStyleTest.tex}，重新编译后会同步展示最新数学盒样式。
+	\end{remark}
+\end{frame}

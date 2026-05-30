@@ -1,0 +1,259 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Remark %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Remarkcolframe}{RGB}{0,110,184}
+\makeatletter
+\newtcbtheorem[number within=section]{beamerremark}{Remark}{
+	enhanced,
+	before skip=2mm,
+	after skip=2mm,
+	breakable,
+	colframe=Remarkcolframe,
+	colback=Remarkcolframe!4!white,
+	boxrule=1.5pt,
+	attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+	fonttitle=\bfseries,
+	boxed title style={frame code={
+			\path[fill=Remarkcolframe]
+			([yshift=-1mm,xshift=-1mm]frame.north west)
+			arc[start angle=0,end angle=180,radius=1mm]
+			([yshift=-1mm,xshift=1mm]frame.north east)
+			arc[start angle=180,end angle=0,radius=1mm];
+			\path[left color=Remarkcolframe,right color=Remarkcolframe,
+			middle color=Remarkcolframe]
+			([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+			[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+			-- (frame.south east) -- (frame.south west)
+			-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+			[sharp corners]-- cycle;
+		},interior engine=empty,
+	},
+	#1
+}{rmk} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Questioncolframe}{HTML}{3d7463}
+\makeatletter
+\newtcbtheorem[number within=section]{beamerquestion}{Question}{
+	enhanced,
+	breakable, 
+	colframe=Questioncolframe,
+	colback=Questioncolframe!4!white,
+	attach boxed title to top left={yshift*=-\tcboxedtitleheight},
+	fonttitle=\bfseries,
+	boxed title size=title,
+	boxed title style={%
+		sharp corners,
+		rounded corners=northwest,
+		colback=tcbcolframe,
+		boxrule=0pt,
+	},
+	underlay boxed title={%
+		\path[fill=tcbcolframe] (title.south west)--(title.south east)
+		to[out=0, in=180] ([xshift=5mm]title.east)--
+		(title.center-|frame.east)
+		[rounded corners=\kvtcb@arc] |-
+		(frame.north) -| cycle;
+	},
+	#1
+}{qs} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Definition %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Definitioncolframe}{HTML}{2b8da3}
+\makeatletter
+\newtcbtheorem[number within=section]{beamerdefinition}{Definition}{
+	shadow={1mm}{-1mm}{0mm}{black!15!white}, % 阴影
+	parbox=false, % 添加缩进
+	enhanced,
+	breakable,
+	colframe = Definitioncolframe,
+	colback = Definitioncolframe!4!white,
+	coltitle = Definitioncolframe,
+	frame hidden,
+	borderline west = {3pt}{0pt}{Definitioncolframe},
+	fonttitle=\bfseries,
+	boxrule = 0pt,
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	segmentation style={solid, Definitioncolframe},
+	#1
+}{dfn} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Property %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Propertycolframe}{HTML}{0c3d92}
+\makeatletter
+\newtcbtheorem[number within=section]{beamerproperty}{Property}{
+	shadow={1mm}{-1mm}{0mm}{black!15!white}, % 阴影
+	parbox=false, % 添加缩进
+	enhanced,
+	breakable,
+	colframe = Propertycolframe,
+	colback = Propertycolframe!4!white,
+	coltitle = Propertycolframe,
+	frame hidden,
+	borderline west = {3pt}{0pt}{Propertycolframe},
+	fonttitle=\bfseries,
+	boxrule = 0pt,
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	segmentation style={solid, Propertycolframe},
+	#1
+}{pro} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Example %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Examplecolframe}{HTML}{a4d65e}
+\makeatletter
+\newtcbtheorem[number within=section]{beamerexample}{Example}{
+	parbox=false, % 添加缩进
+	shadow={1mm}{-1mm}{0mm}{black!15!white}, % 阴影
+	enhanced,
+	breakable,
+	colframe = Examplecolframe,
+	colback = Examplecolframe!4!white,
+	coltitle = Examplecolframe,
+	fonttitle = \bfseries,
+	boxrule = 1.5pt,
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	segmentation style={solid, Examplecolframe},
+	#1
+}{ex} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Theorem %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Theoremcolframe}{HTML}{f3722c}
+\makeatletter
+\newtcbtheorem[number within=section]{beamertheorem}{Theorem}{
+	parbox=false, % 添加缩进
+	shadow={1mm}{-1mm}{0mm}{black!15!white}, % 阴影
+	enhanced,
+	breakable,
+	colframe = Theoremcolframe,
+	colback = Theoremcolframe!4!white,
+	coltitle = Theoremcolframe,
+	frame hidden,
+	borderline west = {3pt}{0pt}{Theoremcolframe},
+	fonttitle = \bfseries,
+	boxrule = 0pt,
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	segmentation style={solid, Theoremcolframe},
+	#1
+}{thm} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Corollary %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Corollarycolframe}{HTML}{ff4d94}
+\makeatletter
+\newtcbtheorem[number within=section]{beamercorollary}{Corollary}{
+	parbox=false, % 添加缩进
+	shadow={1mm}{-1mm}{0mm}{black!15!white}, % 阴影
+	enhanced,
+	breakable,
+	colframe = Corollarycolframe,
+	colback = Corollarycolframe!4!white,
+	coltitle = Corollarycolframe,
+	frame hidden,
+	borderline west = {3pt}{0pt}{Corollarycolframe},
+	fonttitle = \bfseries,
+	boxrule = 0sp,
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	segmentation style={solid, Corollarycolframe},
+	#1
+}{cor} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Lemma %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Lemmacolframe}{HTML}{d72948}
+\makeatletter
+\newtcbtheorem[number within=section]{beamerlemma}{Lemma}{
+	parbox=false, % 添加缩进
+	shadow={1mm}{-1mm}{0mm}{black!15!white}, % 阴影
+	enhanced,
+	breakable,
+	colframe = Lemmacolframe,
+	colback = Lemmacolframe!4!white,
+	coltitle = Lemmacolframe,
+	frame hidden,
+	borderline west = {3pt}{0pt}{Lemmacolframe},
+	fonttitle = \bfseries,
+	boxrule = 0sp,
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	segmentation style={solid, Lemmacolframe},
+	#1
+}{lm} % 引用标签
+\makeatother
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Proposition %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Propositioncolframe}{HTML}{b56fbf}
+\makeatletter
+\newtcbtheorem[number within=section]{beamerproposition}{Proposition}{
+	parbox=false, % 添加缩进
+	shadow={1mm}{-1mm}{0mm}{black!15!white}, % 阴影
+	enhanced,
+	breakable,
+	colframe = Propositioncolframe,
+	colback = Propositioncolframe!4!white,
+	coltitle = Propositioncolframe,
+	frame hidden,
+	borderline west = {3pt}{0pt}{Propositioncolframe},
+	fonttitle = \bfseries,
+	boxrule = 0sp,
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	segmentation style={solid, Propositioncolframe},
+	#1
+}{prp} % 引用标签
+\makeatother
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Solution %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{solutioncol}{HTML}{007B8A}
+\newcommand{\beamersolution}{\textbf{\color{solutioncol}{Solution. }}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Proof %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Proofcol}{HTML}{4dd0e1}
+\renewcommand{\proofname}{\rm \textcolor{Proofcol}{\bfseries Proof.}}
+
+
+
+
+

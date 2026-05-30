@@ -1,0 +1,52 @@
+\section{快速开始}
+%\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+% \sepframe 无插入 logo 的分隔页
+\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+
+\begin{frame}[fragile]{推荐的项目入口 \texttt{main.tex}}
+
+\begin{lstlisting}
+% !TEX encoding = UTF-8
+% !TEX program = lualatex
+% !TEX spellcheck = zh_CN
+\documentclass[10pt, aspectratio=169, english]{beamer}
+\include{./Configure/packages.tex} % 宏包
+\include{./Configure/commands.tex} % 自定义命令
+\include{./Configure/beamerMathStyle.tex} % 自定义数学样式
+\usetheme[amurmapleblue, delaunay, nomail]{Amurmaple}
+%\usefonttheme{serif}
+%\setbeamertemplate{caption}[numbered]
+%\numberwithin{equation}{section}
+
+\include{./Sections/TitlePageInformation.tex}
+\begin{document}
+    \maketitle % TitlePage
+    \include{./Sections/Content.tex} % Contents
+    % Sections
+    \include{./Sections/Section1.tex}
+    \include{./Sections/Section2.tex}
+    \thanksframe{感谢观看！} % Thanksframe
+\end{document}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{主题选项 \textbackslash{usetheme}}
+	\texttt{\textbackslash usetheme[可选参数]{Amurmaple}}
+	
+	\begin{table}[H]
+		\centering
+		\footnotesize
+		\begin{tabular}{c|p{0.6\textwidth}}
+			\toprule
+			可选参数 & 参数说明 \\
+			\midrule
+			\texttt{amurmapleblue} & 使用 USTC 蓝作为主题结构色。\\
+			\texttt{delaunay} & 在封面、分隔页、致谢页生成 Delaunay 网格背景；需要 \hologo{LuaLaTeX} 和 \texttt{luamesh}。\\
+			\texttt{nomail} & 隐藏左侧栏中的邮箱信息，封面页仍可显示邮箱。\\
+			\texttt{nogauge} & 隐藏左侧栏顶部的进度条。\\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+	
+	推荐 \texttt{\textbackslash usetheme[nomail,delaunay,amurmapleblue]{Amurmaple}}。如果编译环境缺少 \texttt{luamesh}，可先去掉 \texttt{delaunay}。
+\end{frame}

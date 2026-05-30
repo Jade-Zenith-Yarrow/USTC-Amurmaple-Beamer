@@ -1,0 +1,76 @@
+\section{封面与目录}
+%\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+% \sepframe 无插入 logo 的分隔页
+\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+
+\begin{frame}[fragile]{封面信息}
+	\begin{block}{封面信息文件}
+		建议把作者、标题、机构、日期、校徽、邮箱、网页等信息集中写在 \texttt{Sections/TitlePageInformation.tex}。
+	\end{block}
+	
+\begin{lstlisting}
+% logo
+\titlegraphic{\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}
+% 基本信息
+\author[Sidebar Author]{\Large{Title Page Author}}
+\mail{Your mail}
+\webpage{Your Webpage}
+\institute{Your Institute}
+\date{Reporting Date}
+\title[Sidebar Title]{\centering\Huge{The Title of Your Beamer}}
+\subtitle{Your Beamer Subtitle}
+\collaboration{\large\textbf{Your Collaboration Information}}
+\end{lstlisting}
+
+\begin{block}{Tips}
+	\begin{itemize}
+		\item 可将 \texttt{\textbackslash mail\{\}} 和 \texttt{\textbackslash webpage\{\}} 替换为学号、班级等信息；
+		\item 可将 \texttt{\textbackslash collaboration\{\}} 替代为指导老师、汇报文献来源等信息。
+	\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}[fragile]{}
+	\vspace*{0.2cm}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.84\linewidth]{./Figures/TitlePageTemplate.pdf}
+		\caption{封面信息示例\footnote{Sidebar Author 和 Sidebar Title 效果见左侧侧边栏（图 \ref{Fig_titlepage} 中不显示）。}}
+		\label{Fig_titlepage}
+	\end{figure}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{目录和分隔页}
+\begin{block}{使用 \texttt{\textbackslash sepframe}}
+	\texttt{\textbackslash sepframe} 会生成带目录的章节分隔页，可选参数 \texttt{title} 用于修改标题，\texttt{image} 用于插入校徽或横版校名。
+\end{block}
+
+\begin{block}{目录页}
+\begin{lstlisting}
+\sepframe[
+    title={目录 Contents},
+    image={\includegraphics[width=9cm]{./Figures/Logos/USTC_slide_blue.pdf}}
+]
+\end{lstlisting}
+\texttt{./Sections/Content.tex} 中已配置好。
+\end{block}
+	
+	
+\begin{block}{分隔页}
+\begin{lstlisting}
+\section{Section Name}
+% \sepframe 无插入 logo 的分隔页
+\sepframe[
+    image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}
+] 
+% 往下编写 Section 正文
+\end{lstlisting}
+请在 \texttt{./Sections/SectionX.tex} 中编写。
+\end{block}
+
+\end{frame}
+
+

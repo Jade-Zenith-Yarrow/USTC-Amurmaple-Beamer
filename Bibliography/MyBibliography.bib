@@ -1,0 +1,610 @@
+% 概述类 =========================================================
+@article{brief2019,
+  title={Brief review of image denoising techniques},
+  author={Fan, Linwei and Zhang, Fan and Fan, Hui and Zhang, Caiming},
+  journal={Visual computing for industry, biomedicine, and art},
+  volume={2},
+  number={1},
+  pages={7},
+  year={2019},
+  publisher={Springer}
+}
+@mastersthesis{NoisyClass,
+	author={李双全},
+	title={ 基于中值滤波和小波变换的图像去噪算法研究 },
+	school={哈尔滨理工大学},
+	year={2009},
+	type={博士论文},
+	month={},
+}
+@mastersthesis{2020xinan,
+author = {肖娟},
+ title = {基于卷积神经网络的图像去噪技术研究},
+school = {西南科技大学},
+year = {2020}
+}
+@mastersthesis{2024xinan,
+author = {王力},
+ title = {基于卷积神经网络的真实噪声图像去噪技术研究},
+school = {西南科技大学},
+year = {2024}
+}
+
+
+
+
+% 空间滤波 =========================================================
+@inproceedings{Gauss,
+  title={A simplified realization for the Gaussian filter in surface metrology},
+  author={Yuan, YB and Vorburger, Theodore V and Song, Jun-Feng and Renegar, Thomas B},
+  booktitle={International Colloquium on Surfaces, Chemnitz (Germany), Jan},
+  pages={133--144},
+  year={2000}
+}
+@article{Weina,
+  title={The application of constrained least squares estimation to image restoration by digital computer},
+  author={Hunt, Bobby R},
+  journal={IEEE Transactions on Computers},
+  volume={100},
+  number={9},
+  pages={805--812},
+  year={1973},
+  publisher={IEEE}
+}
+
+
+
+% 全变分 =========================================================
+@article{TV,
+	title = {Nonlinear total variation based noise removal algorithms},
+	journal = {Physica D: Nonlinear Phenomena},
+	volume = {60},
+	number = {1},
+	pages = {259-268},
+	year = {1992},
+	issn = {0167-2789},
+	author = {Leonid I. Rudin and Stanley Osher and Emad Fatemi},
+}
+@article{2006TV,
+  title={全变分自适应图像去噪模型},
+  author={张红英 and 彭启琮 and others},
+  journal={Opto-Electronic Engineering},
+  volume={33},
+  number={3},
+  pages={50--53},
+  year={2006},
+  publisher={光电工程编辑部}
+}
+@phdthesis{2009TV,
+  title={改进的总变分去噪算法},
+  author={陈利霞 and 宋国乡 and 丁宣浩 and 王旭东 and others},
+  year={2009}
+}
+
+
+
+% 非局部均值 ======================================================
+@inproceedings{NLM,
+	author={Buades, A. and Coll, B. and Morel, J.-M.},
+	booktitle={2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)}, 
+	title={A non-local algorithm for image denoising}, 
+	year={2005},
+	volume={2},
+	pages={60-65},
+}
+@article{2011NLM,
+  title={Non-local means denoising},
+  author={Buades, Antoni and Coll, Bartomeu and Morel, Jean-Michel},
+  journal={Image Processing On Line},
+  volume={1},
+  pages={208--212},
+  year={2011}
+}
+@article{2012NLM,
+  title={Nonlocal image restoration with bilateral variance estimation: A low-rank approach},
+  author={Dong, Weisheng and Shi, Guangming and Li, Xin},
+  journal={IEEE transactions on image processing},
+  volume={22},
+  number={2},
+  pages={700--711},
+  year={2012},
+  publisher={IEEE}
+}
+@article{2016NLM,
+  title={采用多级残差滤波的非局部均值图像去噪方法},
+  author={孙伟峰 and 戴永寿},
+  journal={电子与信息学报},
+  volume={38},
+  number={8},
+  pages={1999--2006},
+  year={2016},
+  publisher={电子与信息学报}
+}
+
+
+
+% 稀疏表示 ======================================================
+@article{Spare,
+  title={Image denoising via sparse and redundant representations over learned dictionaries},
+  author={Elad, Michael and Aharon, Michal},
+  journal={IEEE Transactions on Image processing},
+  volume={15},
+  number={12},
+  pages={3736--3745},
+  year={2006},
+  publisher={IEEE}
+}
+@inproceedings{2009Spare,
+  title={Non-local sparse models for image restoration},
+  author={Mairal, Julien and Bach, Francis and Ponce, Jean and Sapiro, Guillermo and Zisserman, Andrew},
+  booktitle={2009 IEEE 12th international conference on computer vision},
+  pages={2272--2279},
+  year={2009},
+}
+@inproceedings{2015Spare,
+  title={Patch group based nonlocal self-similarity prior learning for image denoising},
+  author={Xu, Jun and Zhang, Lei and Zuo, Wangmeng and Zhang, David and Feng, Xiangchu},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={244--252},
+  year={2015}
+}
+@misc{2022Spare,
+      title={Group Sparse Coding for Image Denoising}, 
+      author={Luoyu Chen and Fei Wu},
+      year={2022},
+      eprint={2212.11501},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+}
+
+
+
+% 低秩分解 ======================================================
+@article{LowRank,
+  title={Robust principal component analysis?},
+  author={Cand{\`e}s, Emmanuel J and Li, Xiaodong and Ma, Yi and Wright, John},
+  journal={Journal of the ACM (JACM)},
+  volume={58},
+  number={3},
+  pages={1--37},
+  year={2011},
+  publisher={ACM New York, NY, USA}
+}
+@inproceedings{2014LowRank,
+  title={Weighted nuclear norm minimization with application to image denoising},
+  author={Gu, Shuhang and Zhang, Lei and Zuo, Wangmeng and Feng, Xiangchu},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={2862--2869},
+  year={2014}
+}
+@article{2016LowRank,
+  title={Weighted Schatten $ p $-norm minimization for image denoising and background subtraction},
+  author={Xie, Yuan and Gu, Shuhang and Liu, Yan and Zuo, Wangmeng and Zhang, Wensheng and Zhang, Lei},
+  journal={IEEE transactions on image processing},
+  volume={25},
+  number={10},
+  pages={4842--4857},
+  year={2016},
+  publisher={IEEE}
+}
+@article{2022LowRank,
+  title={DLRP: Learning deep low-rank prior for remotely sensed image denoising},
+  author={Huang, Zhenghua and Wang, Zhicheng and Zhu, Zifan and Zhang, Yaozong and Fang, Hao and Shi, Yu and Zhang, Tianxu},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  volume={19},
+  pages={1--5},
+  year={2022},
+  publisher={IEEE}
+}
+@article{2023LowRank,
+  title={Low-rank with sparsity constraints for image denoising},
+  author={Ou, Yang and Li, Bailin and Swamy, MNS},
+  journal={Information Sciences},
+  volume={637},
+  pages={118931},
+  year={2023},
+  publisher={Elsevier}
+}
+
+
+
+% 傅里叶变换 ======================================================
+@inproceedings{1999Fuliye,
+  title={Denoising using time-frequency and image processing methods},
+  author={Nelson, Douglas J and Cristobal, Gabriel and Kober, Vitaly and Cakrak, Fehret and Loughlin, Patrick J and Cohen, Leon},
+  booktitle={Advanced signal processing algorithms, architectures, and implementations IX},
+  volume={3807},
+  pages={564--581},
+  year={1999},
+}
+@article{2004Fuliye,
+  title={快速傅里叶变换 FFT 及其应用},
+  author={杨丽娟 and 张白桦 and 叶旭桢 and others},
+  journal={光电工程},
+  volume={1},
+  year={2004}
+}
+@article{2012Fuliye,
+  title={Fourier transform-based scalable image quality measure},
+  author={Narwaria, Manish and Lin, Weisi and McLoughlin, Ian Vince and Emmanuel, Sabu and Chia, Liang-Tien},
+  journal={IEEE Transactions on Image Processing},
+  volume={21},
+  number={8},
+  pages={3364--3377},
+  year={2012},
+  publisher={IEEE}
+}
+@inproceedings{2024Fuliye,
+	title={When Fast Fourier Transform Meets Transformer for Image Restoration},
+	author={Jiang, Xingyu and Zhang, Xiuhui and Gao, Ning and Deng, Yue},
+	booktitle={European Conference on Computer Vision},
+	pages={381--402},
+	year={2024},
+}
+
+
+% 小波变换 =======================================================
+@article{Wavelet,
+  title={Wavelet transform domain filters: a spatially selective noise filtration technique},
+  author={Xu, Yansun and Weaver, John B and Healy, Dennis M and Lu, Jian},
+  journal={IEEE transactions on image processing},
+  volume={3},
+  number={6},
+  pages={747--758},
+  year={1994},
+  publisher={IEEE}
+}
+@article{2004Wavelet,
+  title={Selective noise filtration of image signals using wavelet transform},
+  author={Ugweje, Okechukwu C},
+  journal={Measurement},
+  volume={36},
+  number={3-4},
+  pages={279--287},
+  year={2004},
+  publisher={Elsevier}
+}
+@inproceedings{2010Wavelet,
+  title={Research on Spatially Selective Noise Filtration Based Wavelet Transform},
+  author={Jianhong, Yao and Jicheng, Liu},
+  booktitle={2010 International Conference on Intelligent Computation Technology and Automation},
+  volume={3},
+  pages={120--123},
+  year={2010},
+}
+@article{2019Wavelet,
+  title={Improved wavelet threshold for image de-noising},
+  author={Zhang, Yang and Ding, Weifeng and Pan, Zhifang and Qin, Jing},
+  journal={Frontiers in neuroscience},
+  volume={13},
+  pages={39},
+  year={2019},
+  publisher={Frontiers Media SA}
+}
+@article{2023Wavelet,
+  title={A novel denoising algorithm based on wavelet and non-local moment mean filtering},
+  author={Liu, Caixia and Zhang, Li},
+  journal={Electronics},
+  volume={12},
+  number={6},
+  pages={1461},
+  year={2023},
+  publisher={MDPI}
+}
+
+
+
+% 奇异值分解 =======================================================
+@article{SVD,
+  title={An efficient SVD-based method for image denoising},
+  author={Guo, Qiang and Zhang, Caiming and Zhang, Yunfeng and Liu, Hui},
+  journal={IEEE transactions on Circuits and Systems for Video Technology},
+  volume={26},
+  number={5},
+  pages={868--880},
+  year={2015},
+  publisher={IEEE}
+}
+@article{2015SVD,
+  title={基于分块奇异值分解的两级图像去噪算法},
+  author={刘涵 and 梁莉莉 and 黄令帅},
+  journal={自动化学报},
+  volume={41},
+  number={2},
+  pages={439--444},
+  year={2015},
+  publisher={自动化学报}
+}
+@article{2018SVD,
+	title={Image Denoising Using Block-Rotation-Based SVD Filtering in Wavelet Domain},
+	author={Min Wang and Shudao Zhou},
+	journal={IEICE Trans. Inf. Syst.},
+	year={2018},
+	volume={101-D},
+	pages={1621-1628},
+}
+@article{2020SVD,
+  title={Image denoising using hybrid singular value thresholding operators},
+  author={Zhang, Fan and Fan, Hui and Liu, Peiqiang and Li, Jinjiang},
+  journal={IEEE Access},
+  volume={8},
+  pages={8157--8165},
+  year={2020},
+  publisher={IEEE}
+}
+
+
+@article{2025SVD,
+  title={BM3D Optical Image Denoising Algorithm Based on SVD Noise Estimation},
+  author={Zhang, Wenli and Wang, Kaicheng and Chen, Kefan and Liu, Yirui and Wang, Yi and Zhi, Junlei and Chen, Hao and Wang, Yiping},
+  journal={Optik},
+  pages={172349},
+  year={2025},
+  publisher={Elsevier}
+}
+
+@article{Hunheyu,
+  title={Image denoising by sparse 3-D transform-domain collaborative filtering},
+  author={Dabov, Kostadin and Foi, Alessandro and Katkovnik, Vladimir and Egiazarian, Karen},
+  journal={IEEE Transactions on image processing},
+  volume={16},
+  number={8},
+  pages={2080--2095},
+  year={2007},
+  publisher={IEEE}
+}
+@article{2009Hunheyu,
+  title={应用小波系数 GSM 统计模型的混合傅里叶-小波图像降噪},
+  author={姜三平 and 郝晓剑},
+  journal={中国图象图形学报},
+  volume={14},
+  number={3},
+  pages={448--451},
+  year={2009}
+}
+@article{2013Hunheyu,
+author = {Lebrun, M. and Buades, A. and Morel, J. M.},
+title = {A Nonlocal Bayesian Image Denoising Algorithm},
+journal = {SIAM Journal on Imaging Sciences},
+volume = {6},
+number = {3},
+pages = {1665-1688},
+year = {2013},
+}
+
+
+
+@inproceedings{2012CNN,
+  title={Image denoising: Can plain neural networks compete with BM3D?},
+  author={Burger, Harold C and Schuler, Christian J and Harmeling, Stefan},
+  booktitle={2012 IEEE conference on computer vision and pattern recognition},
+  pages={2392--2399},
+  year={2012},
+}
+@article{2017DnCNN,
+  title={Beyond a gaussian denoiser: Residual learning of deep cnn for image denoising},
+  author={Zhang, Kai and Zuo, Wangmeng and Chen, Yunjin and Meng, Deyu and Zhang, Lei},
+  journal={IEEE transactions on image processing},
+  volume={26},
+  number={7},
+  pages={3142--3155},
+  year={2017},
+  publisher={IEEE}
+}
+@article{2018FFDNet,
+  title={FFDNet: Toward a fast and flexible solution for CNN-based image denoising},
+  author={Zhang, Kai and Zuo, Wangmeng and Zhang, Lei},
+  journal={IEEE Transactions on Image Processing},
+  volume={27},
+  number={9},
+  pages={4608--4622},
+  year={2018},
+  publisher={IEEE}
+}
+@inproceedings{2019CBDNet,
+  title={Toward convolutional blind denoising of real photographs},
+  author={Guo, Shi and Yan, Zifei and Zhang, Kai and Zuo, Wangmeng and Zhang, Lei},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={1712--1722},
+  year={2019}
+}
+
+
+
+@article{2014GAN,
+  title={Generative adversarial nets},
+  author={Goodfellow, Ian J and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  journal={Advances in neural information processing systems},
+  volume={27},
+  year={2014}
+}
+@inproceedings{2017LSGAN,
+  title={Least squares generative adversarial networks},
+  author={Mao, Xudong and Li, Qing and Xie, Haoran and Lau, Raymond YK and Wang, Zhen and Paul Smolley, Stephen},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={2794--2802},
+  year={2017}
+}
+@inproceedings{2018DeblurGAN,
+  title={Deblurgan: Blind motion deblurring using conditional adversarial networks},
+  author={Kupyn, Orest and Budzan, Volodymyr and Mykhailych, Mykola and Mishkin, Dmytro and Matas, Ji{\v{r}}{\'\i}},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={8183--8192},
+  year={2018}
+}
+@inproceedings{2019GANDenoise,
+  title={Image denoising using a generative adversarial network},
+  author={Alsaiari, Abeer and Rustagi, Ridhi and Alhakamy, A’aeshah and Thomas, Manu Mathew and Forbes, Angus G},
+  booktitle={2019 IEEE 2nd international conference on information and computer technologies (ICICT)},
+  pages={126--132},
+  year={2019},
+}
+
+
+
+
+@article{2017Transformer,
+  title={Attention is all you need},
+  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
+  journal={Advances in neural information processing systems},
+  volume={30},
+  year={2017}
+}
+@article{2020ViT,
+  title={An image is worth 16x16 words: Transformers for image recognition at scale},
+  author={Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and others},
+  journal={arXiv preprint arXiv:2010.11929},
+  year={2020}
+}
+@article{2024CTNet,
+  title={A cross transformer for image denoising},
+  author={Tian, Chunwei and Zheng, Menghua and Zuo, Wangmeng and Zhang, Shichao and Zhang, Yanning and Lin, Chia-Wen},
+  journal={Information Fusion},
+  volume={102},
+  pages={102043},
+  year={2024},
+  publisher={Elsevier}
+}
+
+
+
+@article{2018Noise2Noise,
+  title={Noise2Noise: Learning image restoration without clean data},
+  author={Lehtinen, Jaakko and Munkberg, Jacob and Hasselgren, Jon and Laine, Samuli and Karras, Tero and Aittala, Miika and Aila, Timo},
+  journal={arXiv preprint arXiv:1803.04189},
+  year={2018}
+}
+@inproceedings{2019Noise2Void,
+  title={Noise2void-learning denoising from single noisy images},
+  author={Krull, Alexander and Buchholz, Tim-Oliver and Jug, Florian},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={2129--2137},
+  year={2019}
+}
+@INPROCEEDINGS{2021R2R,
+	author={Pang, Tongyao and Zheng, Huan and Quan, Yuhui and Ji, Hui},
+	booktitle={2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+	title={Recorrupted-to-Recorrupted: Unsupervised Deep Learning for Image Denoising}, 
+	year={2021},
+	volume={},
+	number={},
+	pages={2043-2052},
+}
+
+
+
+@misc{2020DDPM,
+      title={Denoising Diffusion Probabilistic Models}, 
+      author={Jonathan Ho and Ajay Jain and Pieter Abbeel},
+      year={2020},
+      eprint={2006.11239},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}, 
+}
+
+@misc{2025tutorialdiffusion,
+      title={Tutorial on Diffusion Models for Imaging and Vision}, 
+      author={Stanley H. Chan},
+      year={2025},
+      eprint={2403.18103},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+}
+
+@article{2022KL,
+   title={The Kullback–Leibler Divergence Between Lattice Gaussian Distributions},
+   volume={102},
+   ISSN={0019-4964},
+   number={4},
+   journal={Journal of the Indian Institute of Science},
+   publisher={Springer Science and Business Media LLC},
+   author={Nielsen, Frank},
+   year={2022},
+   month=jan, pages={1177–1188} }
+
+
+@misc{2024Resfusion,
+      title={Resfusion: Denoising Diffusion Probabilistic Models for Image Restoration Based on Prior Residual Noise}, 
+      author={Zhenning Shi and Haoshuai Zheng and Chen Xu and Changsheng Dong and Bin Pan and Xueshuo Xie and Along He and Tao Li and Huazhu Fu},
+      year={2024},
+      eprint={2311.14900},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+}
+
+@misc{2015Unet,
+      title={U-Net: Convolutional Networks for Biomedical Image Segmentation}, 
+      author={Olaf Ronneberger and Philipp Fischer and Thomas Brox},
+      year={2015},
+      eprint={1505.04597},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+}
+
+@InProceedings{BSDDataSet,
+  author = {D. Martin and C. Fowlkes and D. Tal and J. Malik},
+  title = {A Database of Human Segmented Natural Images and its
+           Application to Evaluating Segmentation Algorithms and
+           Measuring Ecological Statistics},
+  booktitle = {Proc. 8th Int'l Conf. Computer Vision},
+  year = {2001},
+  month = {July},
+  volume = {2},
+  pages = {416--423}
+}
+
+
+@inproceedings{2014Shrinkage,
+  title={Shrinkage fields for effective image restoration},
+  author={Schmidt, Uwe and Roth, Stefan},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={2774--2781},
+  year={2014}
+}
+
+@article{2024DRANet,
+  title={Dual residual attention network for image denoising},
+  author={Wu, Wencong and Liu, Shijie and Xia, Yuelong and Zhang, Yungang},
+  journal={Pattern Recognition},
+  volume={149},
+  pages={110291},
+  year={2024},
+  publisher={Elsevier}
+}
+
+
+@inproceedings{PSNRSSIM,
+	title={Image quality metrics: PSNR vs. SSIM},
+	author={Hore, Alain and Ziou, Djemel},
+	booktitle={2010 20th international conference on pattern recognition},
+	pages={2366--2369},
+	year={2010},
+}
+
+
+@inproceedings{2019SRSID,
+	title={Shadow removal via shadow image decomposition},
+	author={Le, Hieu and Samaras, Dimitris},
+	booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+	pages={8578--8587},
+	year={2019}
+}
+
+@inproceedings{2021DC-ShadowNet,
+	title={Dc-shadownet: Single-image hard and soft shadow removal using unsupervised domain-classifier guided network},
+	author={Jin, Yeying and Sharma, Aashish and Tan, Robby T},
+	booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+	pages={5027--5036},
+	year={2021}
+}
+
+
+@article{2024SADC,
+	title={Shadow-aware dynamic convolution for shadow removal},
+	author={Xu, Yimin and Lin, Mingbao and Yang, Hong and Chao, Fei and Ji, Rongrong},
+	journal={Pattern Recognition},
+	volume={146},
+	pages={109969},
+	year={2024},
+	publisher={Elsevier}
+}

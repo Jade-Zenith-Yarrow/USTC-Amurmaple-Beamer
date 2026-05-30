@@ -1,0 +1,23 @@
+\appendix
+\section*{附录}
+\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+%\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+% \sepframe 无插入 logo 的分隔页
+\begin{frame}[fragile]{附录说明与 Beamer Tips}
+	\begin{information}[附录说明]
+		执行 \texttt{\textbackslash appendix} 后，Amurmaple 主题会将附录部分的页码显示为罗马数字，并且主文档进度条不再继续推进。
+	\end{information}
+	
+	\begin{block}{Beamer Tips}
+		\begin{itemize}
+			\item 文字缩进可以使用 \texttt{\textbackslash qquad} 手动调整；
+			\item 图表排版的大小设置需要手动调整；
+			\item \texttt{\textbackslash begin \{minipage\}[]\{\}...\textbackslash end\{minipage\}} 可以用于个性化布局排版，例如竖排图和文字（$1\times2$、$2\times1$ 等布局）。
+			\item \texttt{\textbackslash footnote} 脚注命令在 \texttt{minipage} 中与 \texttt{frame} 不关联，此时需要先在 \texttt{minipage} 中使用 \texttt{\textbackslash footnotemark}，然后在 \texttt{frame} 中使用 \texttt{\textbackslash footnotetext} 即可。
+			\item 如果需要使用 \texttt{lstlisting} 环境，需要在所处的 \texttt{frame} 环境参数添加 \texttt{fragile}。
+			\item 局部布局微调用 \texttt{\textbackslash vspace\textsuperscript{*}\{\}} 和 \texttt{\textbackslash hspace\textsuperscript{*}\{\}} 上下调整和左右调整。
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+

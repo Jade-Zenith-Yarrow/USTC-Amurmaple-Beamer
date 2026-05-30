@@ -1,0 +1,38 @@
+\section{扩展命令与编译}
+%\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+% \sepframe 无插入 logo 的分隔页
+\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+
+\begin{frame}[fragile]{页内小标题与强调}
+	\framesection{页内小标题}
+	\texttt{\textbackslash framesection\{...\}} 可在同一页中插入带主题色横线的小标题。
+	
+	\framesection{盒装强调}
+	\texttt{\textbackslash boxalert\{...\}}，例如：\boxalert{这是一个重点结论}。
+	
+\begin{lstlisting}
+\framesection{页内小标题}
+\texttt{\textbackslash framesection\{...\}} 可在同一页中插入带主题色横线的小标题。
+
+\framesection{盒装强调}
+\texttt{\textbackslash boxalert\{...\}}，例如：\boxalert{这是一个重点结论}。
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{参考文献、致谢页与编译}
+	\begin{block}{参考文献}
+		\texttt{Bibliography/Bibliography.tex} 中已经配置好，在正文中使用 \texttt{\textbackslash cite\{\}} 即可得到 [N] 形式。若想修改为 \textsuperscript{[N]} 则使用 \texttt{\textbackslash textsuperscript\{\textbackslash cite\{\}\}}。
+	\end{block}
+	
+	\begin{block}{致谢页}
+		\texttt{\textbackslash thanksframe} 用于生成最后的致谢页。可选参数可以替换默认图片；必选参数是致谢文字。
+	\end{block}
+	
+\begin{lstlisting}
+\thanksframe{恳请各位老师批评指正！}
+\end{lstlisting}
+
+	\begin{block}{推荐编译顺序}
+		推荐使用 \hologo{LuaLaTeX}。如果包含参考文献，常见编译顺序为 \texttt{lualatex -> bibtex -> lualatex -> lualatex}。
+	\end{block}
+\end{frame}

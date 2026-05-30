@@ -1,0 +1,77 @@
+\section{模板简介}
+%\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+% \sepframe 无插入 logo 的分隔页
+\sepframe[image={\includegraphics[width=3.38cm]{./Figures/Logos/USTC_logo_blue.pdf}}]
+
+\begin{frame}{模板定位}
+	\begin{information}[USTC Amurmaple 简介]
+		本模板是在 Amurmaple Beamer Theme 及众多二次开发者的基础上，为中国科学技术大学报告场景整理的演示文稿模板。项目已经将主题、宏包、自定义命令、正文分节和参考文献拆分到不同目录，适合用于课程汇报、组会报告、开题答辩和阶段性科研展示。
+	\end{information}
+	
+	\begin{block}{项目入口}
+		\begin{itemize}
+			\item 写作从 \texttt{main.tex} 开始；
+			\item 使用 \hologo{LuaLaTeX} 编译。
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+
+
+\begin{frame}{项目结构}
+\begin{minipage}[t]{\linewidth}
+\texttt{
+	\begin{block}{核心文件}
+		\begin{itemize}
+			\item main.tex：演示文稿入口文件
+			\item beamerthemeAmurmaple.sty：主题样式
+		\end{itemize}
+	\end{block}
+}
+\end{minipage}
+
+\vspace*{1em}
+\begin{minipage}[t]{0.5\linewidth}
+	\texttt{
+		\begin{block}{文件夹介绍 I}
+			\begin{itemize}
+				% Bibliography
+				\item Bibliography
+				\begin{itemize}
+					\item Bibliography.tex：被引入 main.tex
+					\item gbt7714-numerical.bst：.bst 格式文件
+					\item MyBibliography.bib：BibTeX 数据库
+				\end{itemize}
+				% Configure
+				\item Configure
+				\begin{itemize}
+					\item beamerMathStyle.tex：自定义数学样式
+					\item commands.tex：自定义命令
+					\item packages.tex：宏包
+				\end{itemize}
+			\end{itemize}
+		\end{block}
+	}
+\end{minipage}\hspace*{1em}
+\begin{minipage}[t]{0.45\linewidth}
+	\texttt{
+		\begin{block}{文件夹介绍 II}
+			\begin{itemize}
+				% Figures
+				\item Figures
+				\begin{itemize}
+					\item Logos：USTC 相关 logo
+					\item 其他：所需要的图片
+				\end{itemize}
+				% Sections
+				\item Sections
+				\begin{itemize}
+					\item TitlePageInformation.tex：封面页
+					\item Content.tex：目录
+					\item SectionX.tex：Section 内容
+				\end{itemize}
+			\end{itemize}
+		\end{block}
+	}
+\end{minipage}
+\end{frame}

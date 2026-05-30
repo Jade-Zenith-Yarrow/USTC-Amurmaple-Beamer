@@ -1,0 +1,69 @@
+% !TEX encoding = UTF-8
+% !TEX program = lualatex
+% !TEX spellcheck = zh_CN
+\documentclass[10pt,aspectratio=169,english]{beamer}
+%%%%%%%%%%%%%%%%%% 引入配置文件 %%%%%%%%%%%%%%%%%%
+\include{./Configure/packages.tex} % 宏包
+\include{./Configure/commands.tex} % 自定义命令
+\include{./Configure/beamerMathStyle.tex} % 自定义数学样式
+%%%%%%%%%%%%%%%%%% 文档临时设置 %%%%%%%%%%%%%%%%%%
+\usetheme[
+amurmapleblue, % 主题颜色
+delaunay, % 开启网格背景
+nomail, % 取消左侧邮箱
+% nogauge, % 取消左侧进度条
+]{Amurmaple}
+\usefonttheme{serif} % 字体主题为衬线字体
+\setbeamertemplate{caption}[numbered] % 启用 figure 和 table 编号
+\numberwithin{equation}{section}  % 公式编号 (section.number) 格式
+
+\lstdefinestyle{liststyle}{
+	basicstyle=\ttfamily\scriptsize,
+	keywordstyle=\color{AmurmapleBlue}\bfseries,
+	commentstyle=\color{gray},
+	stringstyle=\color{AmurmapleOrange},
+	breaklines=true,
+	breakatwhitespace=true,
+	columns=fullflexible,
+	keepspaces=true,
+	frame=single,
+	framerule=0.4pt,
+	rulecolor=\color{black!20},
+	backgroundcolor=\color{black!2},
+	xleftmargin=0.5em,
+	xrightmargin=0.5em,
+}
+\lstset{style=liststyle,language=[LaTeX]TeX}
+
+%%%%%%%%%%%%%%%%%% document %%%%%%%%%%%%%%%%%%
+
+% 封面页信息
+\include{./Sections/TitlePageInformation.tex}
+%\include{./Sections/TitlePageTemplate.tex}
+\begin{document}
+	% TitlePage
+	\maketitle
+	
+	% Contents
+	\include{./Sections/Content.tex}
+	
+	% Sections
+	\include{./Sections/Section1.tex}
+	\include{./Sections/Section2.tex}
+	\include{./Sections/Section3.tex}
+	\include{./Sections/Section4.tex}
+	\include{./Sections/Section5.tex}
+	\include{./Sections/Section6.tex}
+	
+	% Bibliography
+	\include{./Bibliography/Bibliography.tex}
+	
+	% Appendix
+	\include{./Sections/Appendix.tex}
+	
+	% MathStyle 测试
+	\include{./Sections/MathStyleTest.tex}
+	
+	% Thanksframe
+	\thanksframe{感谢 Beamer Amurmaple 主题的所有开源项目！}
+\end{document}
