@@ -1,6 +1,6 @@
 # USTC Amurmaple Beamer Theme
 
-面向中国科学技术大学报告场景的 LaTeX Beamer 模板，在 [Amurmaple Beamer Theme](https://github.com/mchupin/Amurmaple) 及众多二次开发者的基础上整理而成。仅供学习参考。
+面向中国科学技术大学报告场景的 LaTeX Beamer 模板，在 [Amurmaple Beamer Theme](https://ctan.org/pkg/beamerthemeamurmaple) 及众多二次开发者的基础上整理而成。仅供学习参考。
 
 ## 预览
 
@@ -28,12 +28,10 @@
 
 ## 环境要求
 
-- **LuaLaTeX**（Delaunay 网格背景必需）
-- 常用宏包：`ctex`、`luamesh`、`tcolorbox`、`algorithm2e` 等
+- **LuaLaTeX**（Delaunay 网格背景必需），使用 **LuaLaTeX** 编译。
 
 ## 快速开始
-下载 .zip 解压直接运行 main.tex 即可
-
+下载 .zip 解压运行 main.tex 即可
 ```bash
 # 克隆仓库
 git clone https://github.com/<your-username>/USTC-Amurmaple-Beamer.git
@@ -78,7 +76,7 @@ lualatex main.tex
 
 ## 致谢
 
-- 原始主题 [Amurmaple Beamer Theme](https://github.com/mchupin/Amurmaple) by Maxime CHUPIN
+- 原始主题 [Amurmaple Beamer Theme](https://ctan.org/pkg/beamerthemeamurmaple) by Maxime CHUPIN
 - 众多二次开发者的贡献
 
 ## 说明
